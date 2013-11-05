@@ -1,29 +1,51 @@
+import java.util.ArrayList;
+
 
 public class Client {
 	private String nom , prenom;
-	private ArrayList<Compte> leCompte;
+	private ArrayList<Compte> lesCompte;
 
-
-public  solde(){
-	
-	
-	
-}
-
-
-public boolean CompteRouge(){
-	
-	if (leCompte.fonctionDuCompte<0){
-		return true;
-		
-	}
-	else {
-		return false;
-		
+	public Client (String unNom, String unPrenom){
+		nom=unNom;
+		prenom=unPrenom;
+		lesCompte = new ArrayList<Compte>();
 	}
 	
+	public Client (){
 	
-poubl		
-	
-	
-}
+	}
+
+	public  solde(){
+
+
+
+	}
+
+
+	public boolean CompteRouge(){
+		
+		if (lesCompte.fonctionDuCompte<0){
+			return true;
+
+		}
+		else {
+			return false;
+
+		}
+		
+	}
+
+		public 	void ajoutCompte(Compte unCompte){
+			lesCompte.add(unCompte);
+		
+		
+		}
+		
+//		 public boolean add(E o){
+//		      ensureCapacity(size+1);
+//		      elementData[size++] = o;
+//		      return true;
+//		   }
+
+
+	}
