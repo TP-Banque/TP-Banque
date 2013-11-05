@@ -18,7 +18,7 @@ public class Client {
 	public double solde(){
 		double solde = 0.0;
 		for (Compte unCompte : lesComptes){
-				solde =solde+unCompte.getSolde();
+				solde += unCompte.getSolde();
 		}
 		return solde;
 
@@ -27,7 +27,7 @@ public class Client {
 
 	public boolean CompteRouge(){
 		for (Compte unCompte : lesComptes){
-			if (unCompte.getSolde()<0.0){
+			if (unCompte.getSolde() < 0.0){
 				return true;
 
 			}
