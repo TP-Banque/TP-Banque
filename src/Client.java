@@ -2,9 +2,9 @@
 public class Client {
 	private String nom , prenom;
 	private ArrayList<Compte> leCompte;
-}
 
-public soldeG(){
+
+public  solde(){
 	
 	
 	
@@ -12,8 +12,8 @@ public soldeG(){
 
 
 public boolean CompteRouge(){
-	private String couleurCompte;
-	if (compte="rouge"){
+	
+	if (leCompte.fonctionDuCompte<0){
 		return true;
 		
 	}
@@ -21,7 +21,9 @@ public boolean CompteRouge(){
 		return false;
 		
 	}
-		
+	
+	
+poubl		
 	
 	
 }
