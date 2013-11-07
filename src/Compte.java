@@ -1,4 +1,3 @@
-
 public class Compte{
 	// variables
 	private Client client;
@@ -62,5 +61,9 @@ public class Compte{
 			return true;
 		}
 
+	}
+	// retourne le solde en string
+	public String toString(){
+		system.out.println("le solde est de "+solde+" €");
 	}
 }
