@@ -6,7 +6,11 @@ public class Banque {
 	private	ArrayList<Client> lesClients;
 
 
-
+	public Banque(){
+		
+		Banque = new ArrayList<Client>();
+	}
+	
 	// retourne le client le plus riche de l'arrylist
 	public Client PlusRiche()
 	{
