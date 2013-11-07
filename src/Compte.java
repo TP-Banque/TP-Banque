@@ -64,6 +64,8 @@ public class Compte{
 	}
 	// retourne le solde en string
 	public String toString(){
-		system.out.println("le solde est de "+solde+" €");
+		Strin r;
+		r="le solde est de "+solde+" €";
+		return r;
 	}
 }
