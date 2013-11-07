@@ -43,7 +43,7 @@ public class Banque {
 	}
 	
 	// afficher les clients
-	 public static void toString() {
+	 public void afficherClient() {
                 for (Client unClient : lesClients) {
                         System.out.println(Client.getNom() + " " + Client.getPrenom() + " est un client de cette banque.");
                 }

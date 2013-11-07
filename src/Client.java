@@ -2,7 +2,8 @@ import java.util.ArrayList;
 
 
 public class Client {
-	private String nom , prenom;
+	private static String nom;
+	private static String prenom;
 	private ArrayList<Compte> lesComptes;
 
 
@@ -48,11 +49,11 @@ public class Client {
 
 
 	}
-	  public String getNom() {
+	  public static String getNom() {
           return nom;
   }
   
-  public String getPrenom() {
+  public static String getPrenom() {
           return prenom;
   }
   
