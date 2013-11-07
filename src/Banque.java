@@ -2,52 +2,48 @@ import java.util.ArrayList;
 
 
 public class Banque {
-	// variables
-	private	ArrayList<Client> lesClients;
+        // variables
+        private        ArrayList<Client> lesClients;
 
 
-	public Banque(){
-		
-		Banque = new ArrayList<Client>();
-	}
-	
-	// retourne le client le plus riche de l'arrylist
-	public Client PlusRiche()
-	{
-		// initialisation du de la variable au premier 
-		Client clientRiche = lesClients.get(0);
 
-		for(Client c : lesClients) {
-			if(c.solde() >= clientRiche.solde()) {
-				clientRiche = c;
-			}
-		}
+        // retourne le client le plus riche de l'arrylist
+        public Client PlusRiche()
+        {
+                // initialisation du de la variable au premier
+                Client clientRiche = lesClients.get(0);
 
-		return clientRiche;
-	}
+                for(Client c : lesClients) {
+                        if(c.solde() >= clientRiche.solde()) {
+                                clientRiche = c;
+                        }
+                }
+
+                return clientRiche;
+        }
 
 
-	//  retourne le  client etant dans le rouge
-	public ArrayList<Client> dansLeRouge()
-	{
+        // retourne le client etant dans le rouge
+        public ArrayList<Client> dansLeRouge()
+        {
 
-		ArrayList<Client> INROUGE = new ArrayList<Client>();
+                ArrayList<Client> INROUGE = new ArrayList<Client>();
 
-		for(Client c : lesClients) {
-			if(c.solde() < 0 ) {
-				INROUGE.add(c);
-			}
-		}
-		return INROUGE;
-	}
+                for(Client c : lesClients) {
+                        if(c.solde() < 0 ) {
+                                INROUGE.add(c);
+                        }
+                }
+                return INROUGE;
+        }
 
-	//Fonction ajouter Client 
-	public void ajouterClient(Client unClient) {
-		lesClients.add(unClient);
-	}
-	
-	// afficher les clients
-	 public void afficherClient() {
+        //Fonction ajouter Client
+        public void ajouterClient(Client unClient) {
+                lesClients.add(unClient);
+        }
+        
+        // afficher les clients
+         public void afficherClient() {
                 for (Client unClient : lesClients) {
                         System.out.println(Client.getNom() + " " + Client.getPrenom() + " est un client de cette banque.");
                 }
