@@ -41,4 +41,11 @@ public class Banque {
 	public void ajouterClient(Client unClient) {
 		lesClients.add(unClient);
 	}
+	
+	// afficher les clients
+	 public void afficherClient() {
+                for (Client unClient : lesClients) {
+                        System.out.println(Client.getNom() + " " + Client.getPrenom() + " est un client de cette banque.");
+                }
+        }
 }
