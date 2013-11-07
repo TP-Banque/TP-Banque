@@ -18,7 +18,7 @@ public class Compte{
 	{
 		solde += montant;
 	}
-	
+
 	// debite compte montant en parametre si superieur a 0
 	public boolean debiter(double montant)
 	{
@@ -57,6 +57,6 @@ public class Compte{
 		{
 			return true;
 		}
-		
+
 	}
 }

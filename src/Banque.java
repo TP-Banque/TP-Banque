@@ -4,34 +4,41 @@ import java.util.ArrayList;
 public class Banque {
 	// variables
 	private	ArrayList<Client> lesClients;
-	
-	// retourne client le plus riche de arrylist
+
+
+
+	// retourne le client le plus riche de l'arrylist
 	public Client PlusRiche()
 	{
-		// iniitialision du de la vaeiable au premier 
+		// initialisation du de la variable au premier 
 		Client clientRiche = lesClients.get(0);
 
 		for(Client c : lesClients) {
 			if(c.solde() >= clientRiche.solde()) {
-				 clientRiche = c;
+				clientRiche = c;
 			}
 		}
 
 		return clientRiche;
 	}
-	
-	
-	//  retounr client etant dans le ouge
+
+
+	//  retourne le  client etant dans le rouge
 	public ArrayList<Client> dansLeRouge()
 	{
-		
+
 		ArrayList<Client> INROUGE = new ArrayList<Client>();
 
 		for(Client c : lesClients) {
 			if(c.solde() < 0 ) {
-				 INROUGE.add(c);
+				INROUGE.add(c);
 			}
 		}
 		return INROUGE;
+	}
+
+	//Fonction ajouter Client 
+	public void ajouterClient(Client unClient) {
+		lesClients.add(unClient);
 	}
 }
