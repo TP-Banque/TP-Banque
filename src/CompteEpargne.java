@@ -10,4 +10,10 @@ public class CompteEpargne extends Compte
 		super(client, numero, solde);
 		this.tauxInteret = tauxInteret; 
 	}
+	
+	//constructeur vide
+	public CompteEpargne(){
+		
+	}
+	
 }

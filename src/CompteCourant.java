@@ -9,6 +9,12 @@ public class CompteCourant extends Compte {
 		super(client, numero, solde);
 		decouvertMax = dec_autorise;
 	}
+//  constructeur vide
+	public CompteCourant()
+	{
+		super();
+		
+	}
 
 
 	// debite solde 

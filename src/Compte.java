@@ -12,6 +12,10 @@ public class Compte{
 		this.numero = numero;
 		this.solde = solde;
 	}
+	//constructeur vide
+	public Compte (){
+		
+	}
 
 	// credite compte montant  en parametre
 	public void crediter(double montant)
